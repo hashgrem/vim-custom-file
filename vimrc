@@ -5,13 +5,12 @@
   """"""""""""""""""""""""""""""
 
 
-
 syntax on                 " Syntax color
 filetype on               " Detect filetype
 set encoding=utf-8        " Charset
 
-runtime! debian.vim
 
+runtime! debian.vim
 
 
 set autowrite	            " Automatically save before commands like :next and :make
@@ -25,10 +24,19 @@ set history=700           " History lines that Vim has to remember
 set number                " Show number line
 set background=dark       " Make dark background
 set showcmd		            " Show (partial) command in status line
-set cursorline            " Highlight cursor line
+
 
 " Don't take care of uppercase during search
 set ignorecase
+
+
+" Enable autocompletion menu when pressing tab
+set wildmenu
+
+
+" Remove arrow keys error that disable their usage
+set nocompatible  
+
 
 " 1x tab = 4x space bar
 set softtabstop=4         
@@ -42,6 +50,7 @@ set noerrorbells
 set t_vb=
 set tm=500
 
+colorscheme darkblue
 
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
