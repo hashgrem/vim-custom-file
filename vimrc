@@ -8,10 +8,9 @@
 syntax on                 " Syntax color
 filetype on               " Detect filetype
 set encoding=utf-8        " Charset
-
+colorscheme darkblue      " Color theme
 
 runtime! debian.vim
-
 
 set autowrite	            " Automatically save before commands like :next and :make
 set hidden		            " Hide buffers when they are abandoned
@@ -50,7 +49,6 @@ set noerrorbells
 set t_vb=
 set tm=500
 
-colorscheme darkblue
 
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
