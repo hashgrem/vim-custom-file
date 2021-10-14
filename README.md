@@ -14,11 +14,11 @@
         
           " --- GENERAL --- "
          
-syntax on                 " Syntax color
-set encoding=utf-8        " Charset
-colorscheme darkblue      " Color theme
-filetype off              " Required for plugins
-set mouse=a		          " Enable mouse usage (all modes)
+syntax on                           " Syntax color
+set encoding=utf-8                  " Define charset
+colorscheme darkblue                " Color theme
+filetype off                        " Required for plugins
+set mouse=a		                    " Enable mouse usage (all modes)
 
 
 
@@ -39,16 +39,16 @@ call plug#end()
           
 runtime! debian.vim
 
-set autowrite	            " Automatically save before commands like :next and :make
-set hidden		            " Hide buffers when they are abandoned
-set smartindent             " Improve auto indentation
-set showmatch               " Highlight words from search result
-set history=700             " History lines that Vim has to remember
+set autowrite	                        " Automatically save before commands like :next and :make
+set hidden		                        " Hide buffers when they are abandoned
+set smartindent                         " Improve auto indentation
+set showmatch                           " Highlight words from search result
+set history=700                         " History lines that Vim has to remember
 
 
-set number                  " Show number line
-set background=dark         " Make dark background
-set showcmd		            " Show (partial) command in status line
+set number                              " Show number line
+set background=dark                     " Make dark background
+set showcmd		                        " Show (partial) command in status line
 
 
 " Don't take care of uppercase during search
