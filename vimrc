@@ -57,6 +57,10 @@ set wildmenu
 set nocompatible  
 
 
+" Add a title to the window, corresponding to the file name
+set title
+
+
 " 1x tab = 4x space bar
 set softtabstop=4         
 set shiftwidth=4
