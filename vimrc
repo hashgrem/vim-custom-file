@@ -6,9 +6,28 @@
 
 
 syntax on                 " Syntax color
-filetype on               " Detect filetype
 set encoding=utf-8        " Charset
 colorscheme darkblue      " Color theme
+filetype off              " required
+
+
+          """""""""""""""""""
+          " --- PLUGINS --- "
+          """""""""""""""""""
+
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'frazrepo/vim-rainbow'
+
+call plug#end()
+
+
+          """""""""""""""""""
+          " --- SETTINGS --- "
+          """""""""""""""""""
 
 runtime! debian.vim
 
@@ -48,6 +67,11 @@ set novisualbell
 set noerrorbells
 set t_vb=
 set tm=500
+
+
+" F5 key to open the tree
+map <F5> :NERDTreeToggle<CR>
+
 
 
 if filereadable("/etc/vim/vimrc.local")
