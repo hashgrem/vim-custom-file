@@ -17,10 +17,18 @@ set smartindent           " Improve auto indentation
 set softtabstop=4         " 1x tab = 4x space bar
 set showmatch             " Highlight words from search result
 set background=dark       " Make dark background
-set history=300           " History lines that Vim has to remember
+set history=700           " History lines that Vim has to remember
 
+set number                " Show number line
 
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
 
+
+" Removes sound on errors
+
+set novisualbell
+set noerrorbells
+set t_vb=
+set tm=500
