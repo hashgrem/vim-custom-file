@@ -3,7 +3,7 @@
 " settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
 " will be overwritten everytime an upgrade of the vim packages is performed.
 " It is recommended to make changes after sourcing debian.vim since it alters
-" the value of the 'compatible' option.
+" the value of the 'compatible' option. "
 
 runtime! debian.vim
 
