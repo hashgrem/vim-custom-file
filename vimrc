@@ -1,20 +1,22 @@
-  """"""""""""""""""""""""""""""
-  """                        """
-  """   Basic vim settings   """
-  """                        """
-  """"""""""""""""""""""""""""""
+    """"""""""""""""""""""""""""""
+    """                        """
+    """   Basic vim settings   """
+    """                        """
+    """"""""""""""""""""""""""""""
 
 
+        
+          " --- GENERAL --- "
+         
 syntax on                 " Syntax color
 set encoding=utf-8        " Charset
 colorscheme darkblue      " Color theme
 filetype off              " required
+set mouse=a		            " Enable mouse usage (all modes)
 
 
-          """""""""""""""""""
+
           " --- PLUGINS --- "
-          """""""""""""""""""
-
 
 call plug#begin('~/.vim/plugged')
 
@@ -25,16 +27,14 @@ Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
+     
 
-          """""""""""""""""""
           " --- SETTINGS --- "
-          """""""""""""""""""
-
+          
 runtime! debian.vim
 
 set autowrite	            " Automatically save before commands like :next and :make
 set hidden		            " Hide buffers when they are abandoned
-set mouse=a		            " Enable mouse usage (all modes)
 set smartindent           " Improve auto indentation
 set showmatch             " Highlight words from search result
 set history=700           " History lines that Vim has to remember
@@ -64,7 +64,6 @@ set title
 " 1x tab = 4x space bar
 set softtabstop=4         
 set shiftwidth=4
-
 
 
 " Removes sound on errors
