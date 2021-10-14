@@ -21,6 +21,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'frazrepo/vim-rainbow'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 
